@@ -41,7 +41,7 @@ const GameBoard = ({onSelectSquare,turns}) => {
                                         return(
                                             <li key={colIndex}>
                                                 {/* <button onClick={()=>handleSelectSquare(rowIndex,colIndex)}>{playerSymbol}</button> */}
-                                                <button onClick={()=>onSelectSquare(rowIndex,colIndex)}>{playerSymbol}</button>
+                                                <button onClick={()=>onSelectSquare(rowIndex,colIndex)} disabled={playerSymbol !== null}>{playerSymbol}</button>
                                             </li>
                                         )
                                     })
